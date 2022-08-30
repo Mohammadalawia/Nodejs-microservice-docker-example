@@ -1,0 +1,17 @@
+{
+
+  "name": "app",
+  "version": "1.0.0",
+  "description": "microservice",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "knex": "^2.2.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1"
+  }
+}
