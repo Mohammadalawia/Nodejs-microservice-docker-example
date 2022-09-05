@@ -8,9 +8,6 @@ const PORT = 5000;
 const app = express();
 
 app.use(morgan('dev'));
-// app.use(express.json());
-// app.use(express.urlencoded({extended : true}));
-
 
 app.get('/', (req , res) =>{
     res.send('What are you doing here!');
@@ -26,7 +23,6 @@ app.get('/students', async (req , res) =>{
 app.get('/teachers', async (req , res) =>{
     const teachers = await database2.select().from('teachers');
     res.json(teachers)
-
 
 });
 
